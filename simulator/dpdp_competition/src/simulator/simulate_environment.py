@@ -92,8 +92,11 @@ class SimulateEnvironment(object):
         return history
 
     # 模拟器仿真环节
-    def run(self):
+    def run(self, agent=None):
+        if agent is not None:
+            agent.sar_sequence = []
         used_seconds = 0
+        is_all_order_finish = 1
         # 迭代
         while True:
             logger.info(f"{'*' * 50}")
@@ -105,6 +108,50 @@ class SimulateEnvironment(object):
 
             # update the status of vehicles and orders in a given interval [self.pre_time, self.cur_time]
             updated_input_info = self.update_input()
+
+            # todo part state finish
+            # todo test here delete all of unallocated order(current orders which pickup node have not been visited)
+            #  --> valid!
+            # todo 算法开始时 reset clear 这两个读取文件
+            #  状态刻画从当前的规划结果、订单信息、车辆信息中获取
+            #  vehicle_id_to_destination_state, vehicle_id_to_planned_route_state  --> 未计算 slack 信息
+            #  updated_input_info：id_to_unallocated_order_item
+            #  self: id_to_vehicle
+            state = []
+            vehicle_id_to_destination_state, vehicle_id_to_planned_route_state = get_output_of_algorithm(self.id_to_order_item)
+            # 状态：未处理订单的数量，每辆车的的slack程度：先简化考虑
+            # order information
+            order_info = {}
+            for order in updated_input_info.id_to_unallocated_order_item.values():
+                if order.order_id not in order_info.keys():
+                    order_info[order.order_id] = (order.committed_completion_time - self.cur_time) / 3600
+            num_order = len(order_info.keys())
+            if num_order:
+                state += [num_order, sum(list(order_info.values())), min(list(order_info.values()))]
+            else:
+                state += [0, 1e6, 1e6]
+            # driver information
+            driver_info = {}
+            for driver in self.id_to_vehicle.values():
+                if driver.destination is not None:
+                    driver_info[driver.id] = (driver.destination.arrive_time - self.cur_time) / 3600
+                else:
+                    driver_info[driver.id] = 0
+            state += list(driver_info.values())
+
+            # todo part action  --> action = dqn.take_action(state)
+            if agent is not None:
+                action = agent.take_action(state)
+            else:
+                action = 1
+            if action:
+                pass
+            else:
+                updated_input_info.id_to_unallocated_order_item = {}
+            if agent is not None:
+                agent.sar_sequence += [state, action]
+                # todo reward part
+                agent.sar_sequence += [len(agent.sar_sequence)]
 
             # 派单环节, 设计与算法交互
             used_seconds, dispatch_result = self.dispatch(updated_input_info)
@@ -127,13 +174,18 @@ class SimulateEnvironment(object):
             # 若订单已经超时, 但是算法依旧未分配, 模拟终止
             if self.ignore_allocating_timeout_orders(dispatch_result):
                 logger.error('Simulator terminated')
-                sys.exit(-1)
+                # sys.exit(-1)
+                is_all_order_finish = 0
+                break
+        if is_all_order_finish:
+            # 模拟完成车辆剩下的订单
+            self.simulate_the_left_ongoing_orders_of_vehicles(self.id_to_vehicle)
 
-        # 模拟完成车辆剩下的订单
-        self.simulate_the_left_ongoing_orders_of_vehicles(self.id_to_vehicle)
-
-        # 根据self.history 计算指标
-        self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_vehicle))
+            # 根据self.history 计算指标
+            self.total_score = Evaluator.calculate_total_score(self.history, self.route_map, len(self.id_to_vehicle))
+            # todo last reward Correct
+            if agent is not None:
+                agent.sar_sequence[-1] = self.total_score
 
     # 数据更新
     def update_input(self):
@@ -235,16 +287,18 @@ class SimulateEnvironment(object):
             if (time_start_algorithm < os.stat(Configs.algorithm_output_destination_path).st_mtime < time.time()
                     and time_start_algorithm < os.stat(
                         Configs.algorithm_output_planned_route_path).st_mtime < time.time()):
+                # todo vehicle_id_to_destination 是车辆的下一个访问的节点
+                #  vehicle_id_to_planned_route 是车辆除去下一个访问的节点之后的节点访问路线
                 vehicle_id_to_destination, vehicle_id_to_planned_route = get_output_of_algorithm(self.id_to_order_item)
                 dispatch_result = DispatchResult(vehicle_id_to_destination, vehicle_id_to_planned_route)
                 return used_seconds, dispatch_result
             else:
                 logger.error("Output_json files from the algorithm is not the newest.")
-                sys.exit(-1)
+                # sys.exit(-1)
         else:
             logger.error(message)
             logger.error("Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。")
-            sys.exit(-1)
+            # sys.exit(-1)
 
     # 判断是否完成所有订单的派发
     def complete_the_dispatch_of_all_orders(self):

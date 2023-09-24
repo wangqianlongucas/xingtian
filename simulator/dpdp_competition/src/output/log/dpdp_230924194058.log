@@ -1,0 +1,29 @@
+2023-09-24 19:40:58,193 [main.py         | 51] INFO: Start to run instance_1
+2023-09-24 19:40:58,193 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 19:40:58,197 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 19:40:58,691 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 19:40:58,703 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 19:40:58,706 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 19:40:58,706 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 19:40:58,706 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 19:40:58,706 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 19:40:58,706 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 19:40:58,706 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 19:40:58,706 [simulate_environment.py | 102] INFO: **************************************************
+2023-09-24 19:40:58,706 [simulate_environment.py | 106] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 19:40:58,706 [simulate_environment.py | 189] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 19:40:58,707 [simulate_environment.py | 216] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 19:40:58,707 [main.py         | 85] ERROR: Failed to run simulator
+2023-09-24 19:40:58,708 [main.py         | 86] ERROR: Error: [Errno 2] No such file or directory: '/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/data_interaction/output_destination.json', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main.py", line 56, in <module>
+    score = simulate(Configs.factory_info_file, Configs.route_info_file, instance)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/simulator/simulate_api.py", line 94, in simulate
+    simulate_env.run()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/simulator/simulate_environment.py", line 121, in run
+    vehicle_id_to_destination_state, vehicle_id_to_planned_route_state = get_output_of_algorithm(self.id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 272, in get_output_of_algorithm
+    vehicle_id_to_destination_from_json = read_json_from_file(Configs.algorithm_output_destination_path)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 95, in read_json_from_file
+    with open(file_name, 'r') as fd:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/data_interaction/output_destination.json'
+

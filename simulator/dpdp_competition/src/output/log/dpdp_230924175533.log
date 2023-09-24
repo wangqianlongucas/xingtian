@@ -1,0 +1,1760 @@
+2023-09-24 17:55:33,692 [main.py         | 51] INFO: Start to run instance_1
+2023-09-24 17:55:33,693 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:33,697 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:34,186 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:34,196 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:34,199 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:34,199 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:34,199 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:34,199 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:34,199 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:34,199 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:34,200 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:34,200 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:34,200 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:34,200 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:34,441 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:34,442 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:34,442 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:34,442 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:34,442 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:34,744 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:34,669 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:34,669 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:34,744 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:34,745 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:34,750 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:35,216 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:35,226 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:35,230 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:35,230 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:35,230 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:35,230 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:35,230 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:35,230 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:35,233 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:35,233 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:35,233 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:35,233 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:35,474 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:35,475 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:35,475 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:35,475 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:35,476 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:35,724 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:35,673 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:35,673 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:35,724 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:35,725 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:35,730 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:36,218 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:36,229 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:36,232 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:36,232 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:36,232 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:36,232 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:36,232 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:36,232 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:36,234 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:36,234 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:36,234 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:36,235 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:36,483 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:36,483 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:36,483 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:36,483 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:36,484 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:36,740 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:36,687 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:36,687 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:36,741 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:36,741 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:36,746 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:37,199 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:37,209 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:37,213 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:37,213 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:37,213 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:37,213 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:37,213 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:37,213 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:37,216 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:37,216 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:37,216 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:37,216 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:37,466 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:37,466 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:37,466 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:37,466 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:37,467 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:37,765 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:37,677 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:37,678 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:37,765 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:37,766 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:37,772 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:38,290 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:38,301 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:38,305 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:38,305 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:38,305 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:38,305 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:38,305 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:38,305 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:38,307 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:38,307 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:38,307 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:38,308 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:38,608 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:38,608 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:38,608 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:38,608 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:38,609 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:38,911 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:38,912 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:38,912 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:55:38,912 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:55:38,912 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:55:39,211 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:39,161 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:39,161 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:39,212 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:39,212 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:39,217 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:39,687 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:39,698 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:39,702 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:39,702 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:39,702 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:39,702 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:39,702 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:39,702 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:39,705 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:39,705 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:39,705 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:39,705 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:39,962 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:39,962 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:39,962 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:39,962 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:39,963 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:40,252 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:40,221 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:40,222 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:40,252 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:40,252 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:40,257 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:40,754 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:40,765 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:40,768 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:40,768 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:40,768 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:40,768 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:40,768 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:40,768 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:40,770 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:40,770 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:40,770 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:40,770 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:41,073 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:41,073 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:41,073 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:41,073 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:41,074 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:41,427 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:41,349 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:41,349 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:41,427 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:41,428 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:41,435 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:41,908 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:41,920 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:41,923 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:41,924 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:41,924 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:41,924 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:41,924 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:41,924 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:41,926 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:41,926 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:41,926 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:41,927 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:42,227 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:42,227 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:42,227 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:42,227 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:42,228 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:42,471 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:42,431 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:42,431 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:42,471 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:42,472 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:42,477 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:42,996 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:43,007 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:43,011 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:43,011 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:43,011 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:43,011 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:43,011 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:43,011 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:43,013 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:43,013 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:43,013 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:43,013 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:43,264 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:43,264 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:43,264 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:43,264 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:43,265 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:43,572 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:43,473 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:43,473 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:43,572 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:43,573 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:43,579 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:44,031 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:44,042 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:44,045 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:44,045 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:44,045 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:44,045 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:44,045 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:44,045 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:44,048 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:44,048 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:44,048 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:44,048 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:44,291 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:44,292 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:44,292 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:44,292 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:44,292 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:44,540 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:44,496 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:44,496 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:44,540 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:44,540 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:44,546 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:45,000 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:45,011 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:45,014 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:45,014 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:45,014 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:45,014 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:45,014 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:45,014 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:45,017 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:45,017 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:45,017 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:45,017 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:45,313 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:45,313 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:45,313 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:45,313 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:45,314 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:45,665 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:45,594 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:45,595 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:45,665 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:45,666 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:45,671 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:46,183 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:46,195 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:46,198 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:46,198 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:46,198 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:46,198 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:46,198 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:46,198 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:46,200 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:46,201 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:46,201 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:46,201 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:46,509 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:46,509 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:46,509 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:46,509 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:46,510 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:46,821 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:46,746 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:46,747 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:46,821 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:46,822 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:46,828 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:47,302 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:47,314 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:47,317 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:47,317 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:47,317 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:47,317 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:47,317 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:47,317 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:47,320 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:47,320 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:47,320 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:47,320 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:47,617 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:47,617 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:47,617 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:47,617 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:47,618 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:47,855 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:47,817 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:47,817 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:47,855 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:47,856 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:47,861 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:48,362 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:48,374 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:48,377 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:48,377 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:48,377 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:48,377 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:48,377 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:48,377 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:48,379 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:48,379 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:48,379 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:48,380 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:48,675 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:48,675 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:48,675 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:48,675 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:48,676 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:48,976 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:48,977 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:48,977 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:55:48,977 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:55:48,978 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:55:49,222 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:49,175 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:49,176 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:49,223 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:49,223 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:49,229 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:49,709 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:49,721 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:49,725 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:49,725 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:49,725 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:49,725 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:49,725 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:49,725 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:49,728 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:49,728 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:49,728 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:49,728 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:50,025 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:50,025 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:50,025 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:50,025 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:50,026 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:50,385 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:50,291 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:50,291 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:50,385 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:50,386 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:50,392 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:50,870 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:50,917 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:50,920 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:50,920 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:50,920 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:50,920 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:50,920 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:50,920 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:50,922 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:50,922 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:50,922 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:50,922 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:51,176 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:51,176 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:51,176 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:51,176 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:51,177 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:51,485 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:51,407 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:51,407 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:51,485 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:51,486 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:51,491 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:51,966 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:51,978 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:51,982 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:51,982 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:51,982 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:51,982 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:51,982 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:51,982 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:51,984 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:51,984 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:51,984 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:51,985 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:52,258 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:52,258 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:52,258 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:52,258 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:52,259 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:52,509 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:52,469 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:52,469 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:52,509 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:52,510 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:52,515 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:52,974 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:52,985 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:52,988 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:52,988 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:52,988 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:52,988 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:52,988 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:52,988 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:52,991 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:52,991 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:52,991 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:52,991 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:53,304 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:53,304 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:53,304 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:53,304 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:53,305 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:53,606 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:53,538 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:53,538 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:53,606 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:53,607 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:53,612 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:54,123 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:54,134 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:54,137 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:54,138 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:54,138 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:54,138 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:54,138 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:54,138 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:54,140 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:54,140 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:54,140 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:54,140 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:54,495 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:54,495 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:54,495 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:54,496 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:54,496 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:54,742 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:54,742 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:54,742 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:55:54,742 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:55:54,743 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:55:55,046 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:54,968 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:54,968 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:55,046 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:55,047 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:55,053 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:55,522 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:55,533 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:55,536 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:55,536 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:55,536 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:55,536 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:55,536 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:55,536 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:55,538 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:55,538 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:55,538 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:55,539 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:55,847 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:55,847 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:55,847 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:55,847 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:55,848 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:56,153 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:56,106 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:56,106 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:56,153 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:56,154 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:56,159 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:56,652 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:56,663 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:56,666 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:56,666 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:56,667 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:56,667 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:56,667 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:56,667 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:56,669 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:56,669 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:56,669 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:56,669 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:57,023 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:57,023 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:57,023 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:57,023 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:57,024 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:57,324 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:57,253 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:57,253 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:57,324 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:57,324 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:57,330 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:57,793 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:57,803 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:57,807 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:57,807 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:57,807 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:57,807 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:57,807 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:57,807 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:57,809 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:57,809 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:57,809 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:57,810 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:58,107 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:58,107 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:58,107 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:58,107 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:58,108 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:58,407 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:58,325 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:58,325 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:58,408 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:58,408 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:58,414 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:58,874 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:58,885 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:58,888 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:58,888 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:58,888 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:58,888 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:58,888 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:58,888 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:58,891 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:58,891 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:58,891 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:58,891 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:59,142 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:55:59,142 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:59,142 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:55:59,142 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:55:59,143 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:55:59,446 [simulate_environment.py | 294] ERROR: 2023-09-24 17:55:59,345 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:55:59,345 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:55:59,446 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:55:59,447 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:55:59,453 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:55:59,953 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:55:59,964 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:55:59,967 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:55:59,968 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:55:59,968 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:55:59,968 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:55:59,968 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:55:59,968 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:55:59,970 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:55:59,970 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:55:59,970 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:55:59,970 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:00,271 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:00,271 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:00,271 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:00,271 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:00,272 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:00,522 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:00,486 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:00,487 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:00,523 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:00,523 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:00,528 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:00,988 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:00,999 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:01,002 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:01,003 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:01,003 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:01,003 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:01,003 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:01,003 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:01,005 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:01,005 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:01,005 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:01,006 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:01,250 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:01,251 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:01,251 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:01,251 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:01,251 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:01,540 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:01,490 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:01,490 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:01,541 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:01,541 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:01,547 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:02,043 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:02,054 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:02,058 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:02,058 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:02,058 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:02,058 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:02,058 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:02,058 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:02,060 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:02,061 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:02,061 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:02,061 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:02,371 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:02,372 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:02,372 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:02,372 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:02,373 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:02,676 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:02,608 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:02,608 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:02,677 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:02,677 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:02,683 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:03,146 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:03,157 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:03,161 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:03,161 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:03,161 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:03,161 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:03,161 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:03,161 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:03,164 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:03,164 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:03,164 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:03,164 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:03,471 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:03,472 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:03,472 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:03,472 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:03,473 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:03,724 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:03,670 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:03,670 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:03,725 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:03,725 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:03,731 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:04,234 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:04,244 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:04,248 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:04,248 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:04,248 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:04,248 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:04,248 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:04,248 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:04,250 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:04,250 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:04,250 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:04,250 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:04,492 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:04,493 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:04,493 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:04,493 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:04,493 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:04,733 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:04,690 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:04,690 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:04,733 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:04,734 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:04,739 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:05,192 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:05,203 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:05,206 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:05,206 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:05,206 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:05,206 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:05,206 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:05,206 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:05,209 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:05,209 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:05,209 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:05,210 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:05,507 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:05,507 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:05,507 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:05,507 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:05,508 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:05,754 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:05,691 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:05,691 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:05,754 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:05,755 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:05,761 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:06,225 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:06,236 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:06,240 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:06,240 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:06,240 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:06,240 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:06,240 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:06,240 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:06,242 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:06,243 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:06,243 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:06,243 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:06,551 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:06,552 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:06,552 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:06,552 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:06,552 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:06,866 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:06,783 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:06,784 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:06,867 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:06,867 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:06,873 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:07,377 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:07,388 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:07,391 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:07,391 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:07,391 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:07,391 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:07,391 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:07,391 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:07,393 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:07,393 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:07,393 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:07,394 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:07,638 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:07,638 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:07,638 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:07,638 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:07,639 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:07,938 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:07,892 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:07,893 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:07,938 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:07,939 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:07,944 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:08,421 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:08,432 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:08,436 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:08,436 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:08,436 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:08,436 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:08,436 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:08,436 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:08,438 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:08,439 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:08,439 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:08,439 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:08,734 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:08,734 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:08,734 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:08,734 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:08,735 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:09,034 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:08,962 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:08,962 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:09,034 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:09,035 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:09,041 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:09,558 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:09,570 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:09,573 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:09,574 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:09,574 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:09,574 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:09,574 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:09,574 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:09,576 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:09,576 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:09,576 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:09,576 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:09,879 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:09,879 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:09,879 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:09,879 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:09,880 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:10,169 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:10,095 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:10,095 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:10,170 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:10,170 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:10,176 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:10,636 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:10,648 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:10,652 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:10,652 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:10,652 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:10,652 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:10,652 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:10,652 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:10,655 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:10,655 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:10,655 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:10,655 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:10,966 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:10,966 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:10,966 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:10,966 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:10,967 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:11,270 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:11,207 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:11,207 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:11,271 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:11,271 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:11,276 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:11,778 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:11,789 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:11,792 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:11,792 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:11,792 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:11,792 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:11,792 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:11,792 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:11,794 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:11,794 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:11,794 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:11,794 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:12,097 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:12,097 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:12,097 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:12,097 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:12,098 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:12,403 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:12,336 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:12,336 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:12,403 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:12,404 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:12,409 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:12,877 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:12,889 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:12,892 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:12,892 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:12,892 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:12,892 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:12,892 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:12,892 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:12,895 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:12,895 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:12,895 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:12,895 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:13,139 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:13,139 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:13,139 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:13,139 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:13,140 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:13,385 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:13,335 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:13,336 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:13,385 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:13,385 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:13,391 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:13,861 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:13,872 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:13,875 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:13,876 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:13,876 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:13,876 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:13,876 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:13,876 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:13,878 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:13,878 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:13,878 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:13,879 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:14,134 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:14,134 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:14,134 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:14,134 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:14,135 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:14,374 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:14,346 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:14,347 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:14,374 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:14,375 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:14,379 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:14,891 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:14,903 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:14,907 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:14,907 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:14,908 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:14,908 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:14,908 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:14,908 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:14,910 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:14,910 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:14,910 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:14,910 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:15,163 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:15,163 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:15,163 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:15,163 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:15,164 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:15,408 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:15,381 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:15,381 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:15,409 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:15,409 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:15,415 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:15,900 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:15,911 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:15,914 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:15,914 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:15,914 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:15,914 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:15,914 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:15,914 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:15,918 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:15,918 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:15,918 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:15,918 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:16,224 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:16,224 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:16,224 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:16,224 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:16,225 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:16,478 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:16,452 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:16,452 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:16,478 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:16,479 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:16,484 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:16,980 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:16,992 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:16,996 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:16,996 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:16,996 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:16,996 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:16,996 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:16,996 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:16,998 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:16,998 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:16,998 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:16,998 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:17,242 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:17,242 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:17,242 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:17,242 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:17,243 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:17,491 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:17,459 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:17,459 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:17,492 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:17,492 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:17,497 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:17,949 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:17,960 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:17,963 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:17,963 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:17,963 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:17,963 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:17,963 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:17,963 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:17,966 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:17,966 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:17,966 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:17,966 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:18,211 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:18,211 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:18,211 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:18,211 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:18,212 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:18,451 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:18,451 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:18,451 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:56:18,451 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:56:18,452 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:56:18,696 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:18,637 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:18,638 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:18,697 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:18,697 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:18,703 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:19,158 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:19,169 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:19,173 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:19,173 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:19,173 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:19,173 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:19,173 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:19,173 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:19,175 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:19,175 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:19,175 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:19,176 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:19,478 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:19,478 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:19,478 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:19,478 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:19,479 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:19,720 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:19,683 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:19,683 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:19,720 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:19,721 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:19,726 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:20,221 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:20,232 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:20,235 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:20,235 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:20,235 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:20,235 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:20,235 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:20,235 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:20,237 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:20,237 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:20,237 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:20,238 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:20,551 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:20,552 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:20,552 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:20,552 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:20,553 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:20,859 [simulate_environment.py | 294] ERROR: 2023-09-24 17:56:20,800 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:56:20,800 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:56:20,859 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:56:20,860 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:56:20,865 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:56:21,332 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:56:21,344 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:56:21,347 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:56:21,347 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:56:21,347 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:56:21,347 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:56:21,347 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:56:21,347 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:56:21,349 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:21,349 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:56:21,349 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:56:21,350 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:56:21,606 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:56:21,607 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:56:21,607 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:56:21,607 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:56:21,607 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items

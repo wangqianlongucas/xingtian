@@ -17,17 +17,20 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE
-
+import random
 import traceback
 import datetime
 import numpy as np
 import sys
 
 from src.conf.configs import Configs
-from src.simulator.simulate_api import simulate
+from src.simulator.simulate_api import simulate, train
 from src.utils.log_utils import ini_logger, remove_file_handler_of_logging
 from src.utils.logging_engine import logger
 # from naie.metrics import report
+
+from dqn import DQN, ReplayBuffer
+import torch
 
 if __name__ == "__main__":
     # if you want to traverse all instances, set the selected_instances to []
@@ -48,7 +51,34 @@ if __name__ == "__main__":
         logger.info(f"Start to run {instance}")
 
         try:
-            score = simulate(Configs.factory_info_file, Configs.route_info_file, instance)
+            is_dqn = 0
+            if not is_dqn:
+                score = simulate(Configs.factory_info_file, Configs.route_info_file, instance)
+            else:
+                lr = 5e-4
+                num_episodes = 500
+                hidden_dim = 128
+                gamma = 0.98
+                epsilon = 0.8
+                target_update = 4
+                buffer_size = 10000
+                minimal_size = 128
+                batch_size = 64
+                device = torch.device("cuda") if torch.cuda.is_available() else torch.device(
+                    "cpu")
+
+                random.seed(0)
+                np.random.seed(0)
+                torch.manual_seed(0)
+                replay_buffer = ReplayBuffer(buffer_size)
+                state_dim = 8
+                action_dim = 2
+                agent = DQN(state_dim, hidden_dim, action_dim, lr, gamma, epsilon,
+                            target_update, device)
+
+                M = 1e6
+                score = train(Configs.factory_info_file, Configs.route_info_file, instance, agent, replay_buffer,
+                              minimal_size, batch_size)
             score_list.append(score)
             logger.info(f"Score of {instance}: {score}")
         except Exception as e:

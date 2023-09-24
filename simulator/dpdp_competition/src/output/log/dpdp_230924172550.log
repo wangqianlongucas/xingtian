@@ -1,0 +1,744 @@
+2023-09-24 17:25:50,872 [main.py         | 51] INFO: Start to run instance_1
+2023-09-24 17:25:50,873 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:25:50,878 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:25:51,370 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:25:51,380 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:25:51,384 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:25:51,384 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:25:51,384 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:25:51,384 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:25:51,384 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:25:51,384 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:25:51,384 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:51,384 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:25:51,384 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:25:51,384 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:51,677 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:51,677 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:51,677 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:25:51,677 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:25:51,678 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:51,931 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:51,931 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:51,931 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:25:51,931 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:25:51,931 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:52,178 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:52,178 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:52,178 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:25:52,178 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:25:52,179 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:52,418 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:52,419 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:52,419 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:25:52,419 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:25:52,419 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:52,719 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:52,719 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:52,719 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:25:52,719 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:25:52,720 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:52,977 [simulate_environment.py | 302] INFO: 2023-09-24 01:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:52,978 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:52,978 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:10:00, pre time: 2023-09-24 01:00:00
+2023-09-24 17:25:52,978 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:10:00
+2023-09-24 17:25:52,978 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:53,227 [simulate_environment.py | 302] INFO: 2023-09-24 01:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:53,228 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:53,228 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:20:00, pre time: 2023-09-24 01:10:00
+2023-09-24 17:25:53,228 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:20:00
+2023-09-24 17:25:53,228 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:53,525 [simulate_environment.py | 302] INFO: 2023-09-24 01:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:53,525 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:53,525 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:30:00, pre time: 2023-09-24 01:20:00
+2023-09-24 17:25:53,525 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:30:00
+2023-09-24 17:25:53,526 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:53,776 [simulate_environment.py | 302] INFO: 2023-09-24 01:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:53,776 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:53,776 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:40:00, pre time: 2023-09-24 01:30:00
+2023-09-24 17:25:53,776 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:40:00
+2023-09-24 17:25:53,777 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:54,044 [simulate_environment.py | 302] INFO: 2023-09-24 01:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:54,044 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:54,044 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:50:00, pre time: 2023-09-24 01:40:00
+2023-09-24 17:25:54,044 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:50:00
+2023-09-24 17:25:54,045 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:54,405 [simulate_environment.py | 302] INFO: 2023-09-24 01:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:54,406 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:54,406 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:00:00, pre time: 2023-09-24 01:50:00
+2023-09-24 17:25:54,406 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:00:00
+2023-09-24 17:25:54,406 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:54,702 [simulate_environment.py | 302] INFO: 2023-09-24 02:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:54,702 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:54,702 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:10:00, pre time: 2023-09-24 02:00:00
+2023-09-24 17:25:54,702 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:10:00
+2023-09-24 17:25:54,703 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:55,005 [simulate_environment.py | 302] INFO: 2023-09-24 02:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:55,005 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:55,005 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:20:00, pre time: 2023-09-24 02:10:00
+2023-09-24 17:25:55,005 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:20:00
+2023-09-24 17:25:55,006 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:55,369 [simulate_environment.py | 302] INFO: 2023-09-24 02:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:55,370 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:55,370 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:30:00, pre time: 2023-09-24 02:20:00
+2023-09-24 17:25:55,370 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:30:00
+2023-09-24 17:25:55,370 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:55,612 [simulate_environment.py | 302] INFO: 2023-09-24 02:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:55,612 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:55,612 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:40:00, pre time: 2023-09-24 02:30:00
+2023-09-24 17:25:55,612 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:40:00
+2023-09-24 17:25:55,613 [simulate_environment.py | 214] INFO: Get 7 unallocated order items, 4 ongoing order items, 0 completed order items
+2023-09-24 17:25:55,901 [simulate_environment.py | 294] ERROR: 2023-09-24 17:25:55,864 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:25:55,866 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:25:55,901 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:25:55,902 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:25:55,908 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:25:56,374 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:25:56,385 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:25:56,388 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:25:56,388 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:25:56,388 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:25:56,388 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:25:56,388 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:25:56,388 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:25:56,391 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:56,391 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:25:56,391 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:25:56,392 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:56,661 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:56,661 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:56,661 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:25:56,662 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:25:56,662 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:56,960 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:56,960 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:56,960 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:25:56,960 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:25:56,961 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:57,259 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:57,259 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:57,259 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:25:57,259 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:25:57,260 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:57,508 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:57,509 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:57,509 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:25:57,509 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:25:57,510 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:57,807 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:57,808 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:57,808 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:25:57,808 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:25:57,845 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:58,145 [simulate_environment.py | 302] INFO: 2023-09-24 01:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:58,145 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:58,145 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:10:00, pre time: 2023-09-24 01:00:00
+2023-09-24 17:25:58,145 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:10:00
+2023-09-24 17:25:58,146 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:58,445 [simulate_environment.py | 302] INFO: 2023-09-24 01:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:58,445 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:58,445 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:20:00, pre time: 2023-09-24 01:10:00
+2023-09-24 17:25:58,445 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:20:00
+2023-09-24 17:25:58,446 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:58,796 [simulate_environment.py | 302] INFO: 2023-09-24 01:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:58,796 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:58,796 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:30:00, pre time: 2023-09-24 01:20:00
+2023-09-24 17:25:58,796 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:30:00
+2023-09-24 17:25:58,797 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:58,995 [simulate_environment.py | 302] INFO: 2023-09-24 01:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:58,996 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:58,996 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:40:00, pre time: 2023-09-24 01:30:00
+2023-09-24 17:25:58,996 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:40:00
+2023-09-24 17:25:58,996 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:59,246 [simulate_environment.py | 302] INFO: 2023-09-24 01:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:59,247 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:59,247 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:50:00, pre time: 2023-09-24 01:40:00
+2023-09-24 17:25:59,247 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:50:00
+2023-09-24 17:25:59,247 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:59,492 [simulate_environment.py | 302] INFO: 2023-09-24 01:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:59,492 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:59,492 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:00:00, pre time: 2023-09-24 01:50:00
+2023-09-24 17:25:59,492 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:00:00
+2023-09-24 17:25:59,493 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:25:59,790 [simulate_environment.py | 302] INFO: 2023-09-24 02:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:25:59,790 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:25:59,790 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:10:00, pre time: 2023-09-24 02:00:00
+2023-09-24 17:25:59,790 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:10:00
+2023-09-24 17:25:59,791 [simulate_environment.py | 214] INFO: Get 6 unallocated order items, 4 ongoing order items, 0 completed order items
+2023-09-24 17:26:00,086 [simulate_environment.py | 302] INFO: 2023-09-24 02:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:00,086 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:00,086 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:20:00, pre time: 2023-09-24 02:10:00
+2023-09-24 17:26:00,086 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:20:00
+2023-09-24 17:26:00,087 [simulate_environment.py | 214] INFO: Get 5 unallocated order items, 5 ongoing order items, 0 completed order items
+2023-09-24 17:26:00,388 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:00,324 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:00,324 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:00,389 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:00,390 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:00,395 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:00,856 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:00,867 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:00,870 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:00,870 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:00,870 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:00,870 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:00,871 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:00,871 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:00,873 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:00,873 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:00,873 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:00,874 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:01,115 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:01,115 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:01,115 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:01,115 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:01,115 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:01,369 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:01,370 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:01,370 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:01,370 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:01,371 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:26:01,670 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:01,585 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:01,585 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:01,671 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:01,671 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:01,677 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:02,136 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:02,147 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:02,150 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:02,150 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:02,150 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:02,150 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:02,150 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:02,151 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:02,153 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:02,153 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:02,153 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:02,154 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:02,396 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:02,397 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:02,397 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:02,397 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:02,397 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:02,646 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:02,646 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:02,646 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:02,646 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:02,647 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:02,949 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:02,949 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:02,949 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:26:02,949 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:26:02,950 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:03,196 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:03,196 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:03,196 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:26:03,196 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:26:03,197 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:03,456 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:03,457 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:03,457 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:26:03,457 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:26:03,457 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:03,764 [simulate_environment.py | 302] INFO: 2023-09-24 01:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:03,764 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:03,764 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:10:00, pre time: 2023-09-24 01:00:00
+2023-09-24 17:26:03,765 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:10:00
+2023-09-24 17:26:03,765 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:04,004 [simulate_environment.py | 302] INFO: 2023-09-24 01:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:04,005 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:04,005 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:20:00, pre time: 2023-09-24 01:10:00
+2023-09-24 17:26:04,005 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:20:00
+2023-09-24 17:26:04,006 [simulate_environment.py | 214] INFO: Get 5 unallocated order items, 4 ongoing order items, 0 completed order items
+2023-09-24 17:26:04,247 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:04,210 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:04,210 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:04,248 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:04,248 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:04,254 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:04,752 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:04,763 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:04,766 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:04,767 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:04,767 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:04,767 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:04,767 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:04,767 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:04,769 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:04,769 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:04,769 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:04,769 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:05,066 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:05,066 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:05,067 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:05,067 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:05,067 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:05,311 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:05,312 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:05,312 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:05,312 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:05,312 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:05,551 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:05,551 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:05,551 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:26:05,551 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:26:05,552 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:05,821 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:05,821 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:05,821 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:26:05,821 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:26:05,822 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:06,069 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:06,069 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:06,069 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:26:06,069 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:26:06,070 [simulate_environment.py | 214] INFO: Get 5 unallocated order items, 4 ongoing order items, 0 completed order items
+2023-09-24 17:26:06,310 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:06,255 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:06,256 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:06,310 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:06,311 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:06,316 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:06,770 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:06,781 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:06,784 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:06,785 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:06,785 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:06,785 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:06,785 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:06,785 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:06,787 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:06,788 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:06,788 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:06,788 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:07,044 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:07,044 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:07,044 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:07,044 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:07,045 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:07,302 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:07,259 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:07,259 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:07,302 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:07,303 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:07,308 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:07,798 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:07,808 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:07,812 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:07,812 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:07,812 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:07,812 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:07,812 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:07,812 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:07,814 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:07,814 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:07,814 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:07,814 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:08,105 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:08,105 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:08,105 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:08,105 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:08,106 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:08,358 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:08,358 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:08,358 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:08,359 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:08,359 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:08,648 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:08,648 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:08,648 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:26:08,648 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:26:08,648 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:08,948 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:08,949 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:08,949 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:26:08,949 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:26:08,949 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:09,242 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:09,242 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:09,242 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:26:09,242 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:26:09,242 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:09,492 [simulate_environment.py | 302] INFO: 2023-09-24 01:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:09,493 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:09,493 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:10:00, pre time: 2023-09-24 01:00:00
+2023-09-24 17:26:09,493 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:10:00
+2023-09-24 17:26:09,493 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:09,743 [simulate_environment.py | 302] INFO: 2023-09-24 01:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:09,744 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:09,744 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:20:00, pre time: 2023-09-24 01:10:00
+2023-09-24 17:26:09,744 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:20:00
+2023-09-24 17:26:09,744 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:09,982 [simulate_environment.py | 302] INFO: 2023-09-24 01:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:09,982 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:09,982 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:30:00, pre time: 2023-09-24 01:20:00
+2023-09-24 17:26:09,982 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:30:00
+2023-09-24 17:26:09,984 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:10,277 [simulate_environment.py | 302] INFO: 2023-09-24 01:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:10,277 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:10,277 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:40:00, pre time: 2023-09-24 01:30:00
+2023-09-24 17:26:10,277 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:40:00
+2023-09-24 17:26:10,278 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:10,518 [simulate_environment.py | 302] INFO: 2023-09-24 01:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:10,518 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:10,518 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:50:00, pre time: 2023-09-24 01:40:00
+2023-09-24 17:26:10,518 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:50:00
+2023-09-24 17:26:10,519 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:10,766 [simulate_environment.py | 302] INFO: 2023-09-24 01:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:10,767 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:10,767 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:00:00, pre time: 2023-09-24 01:50:00
+2023-09-24 17:26:10,767 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:00:00
+2023-09-24 17:26:10,767 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:11,015 [simulate_environment.py | 302] INFO: 2023-09-24 02:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:11,015 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:11,015 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:10:00, pre time: 2023-09-24 02:00:00
+2023-09-24 17:26:11,015 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:10:00
+2023-09-24 17:26:11,016 [simulate_environment.py | 214] INFO: Get 6 unallocated order items, 4 ongoing order items, 0 completed order items
+2023-09-24 17:26:11,324 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:11,236 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:11,237 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:11,325 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:11,325 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:11,331 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:11,788 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:11,799 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:11,802 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:11,802 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:11,802 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:11,802 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:11,802 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:11,802 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:11,805 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:11,805 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:11,805 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:11,805 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:12,050 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:12,051 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:12,051 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:12,051 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:12,051 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:12,302 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:12,250 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:12,251 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:12,303 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:12,303 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:12,308 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:12,795 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:12,805 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:12,808 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:12,808 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:12,808 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:12,808 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:12,808 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:12,809 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:12,810 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:12,811 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:12,811 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:12,811 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:13,061 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:13,061 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:13,061 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:13,061 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:13,062 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:13,305 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:13,306 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:13,306 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:13,306 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:13,307 [simulate_environment.py | 214] INFO: Get 2 unallocated order items, 1 ongoing order items, 0 completed order items
+2023-09-24 17:26:13,552 [simulate_environment.py | 294] ERROR: 2023-09-24 17:26:13,506 [main_algorithm.py | 31] ERROR: Failed to run algorithm
+2023-09-24 17:26:13,506 [main_algorithm.py | 32] ERROR: Error: 'NoneType' object has no attribute 'load_time', Traceback (most recent call last):
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/main_algorithm.py", line 28, in <module>
+    scheduling()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 230, in scheduling
+    id_to_factory, id_to_unallocated_order_item, id_to_ongoing_order_item, id_to_vehicle = __read_input_json()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/algorithm/algorithm_demo.py", line 260, in __read_input_json
+    id_to_vehicle = get_vehicle_instance_dict(vehicle_infos, id_to_order_item, id_to_factory)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 183, in get_vehicle_instance_dict
+    destination = __get_destination(destination, id_to_factory, id_to_order_item)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/utils/json_tools.py", line 211, in __get_destination
+    return Node(factory_id, factory.lng, factory.lat, pickup_items, delivery_items, arr_time, leave_time)
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 41, in __init__
+    self.__loading_time = self.calculate_loading_time()
+  File "/Users/wangqianlong/Desktop/personal/github/xingtian/simulator/dpdp_competition/src/common/node.py", line 59, in calculate_loading_time
+    loading_time += item.load_time
+AttributeError: 'NoneType' object has no attribute 'load_time'
+
+FAIL
+
+2023-09-24 17:26:13,552 [simulate_environment.py | 295] ERROR: Can not catch the 'SUCCESS' from the algorithm. 未寻获算法输出成功标识'SUCCESS'。
+2023-09-24 17:26:13,553 [simulate_api.py | 60] INFO: Start time of the simulator: 2023-09-24 00:00:00, time interval:  600.00
+2023-09-24 17:26:13,558 [input_utils.py  | 48] INFO: Get 154 factories
+2023-09-24 17:26:14,015 [input_utils.py  | 52] INFO: Get 23562 routes
+2023-09-24 17:26:14,026 [input_utils.py  | 57] INFO: Get 5 vehicles
+2023-09-24 17:26:14,030 [input_utils.py  | 61] INFO: Get 50 orders
+2023-09-24 17:26:14,030 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2023-09-24 17:26:14,030 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2023-09-24 17:26:14,030 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2023-09-24 17:26:14,030 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2023-09-24 17:26:14,030 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2023-09-24 17:26:14,032 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:14,032 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:10:00, pre time: 2023-09-24 00:00:00
+2023-09-24 17:26:14,032 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:10:00
+2023-09-24 17:26:14,033 [simulate_environment.py | 214] INFO: Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:14,287 [simulate_environment.py | 302] INFO: 2023-09-24 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:14,288 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:14,288 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:20:00, pre time: 2023-09-24 00:10:00
+2023-09-24 17:26:14,288 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:20:00
+2023-09-24 17:26:14,288 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:14,538 [simulate_environment.py | 302] INFO: 2023-09-24 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:14,539 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:14,539 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:30:00, pre time: 2023-09-24 00:20:00
+2023-09-24 17:26:14,539 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:30:00
+2023-09-24 17:26:14,539 [simulate_environment.py | 214] INFO: Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:14,785 [simulate_environment.py | 302] INFO: 2023-09-24 00:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:14,785 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:14,785 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:40:00, pre time: 2023-09-24 00:30:00
+2023-09-24 17:26:14,785 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:40:00
+2023-09-24 17:26:14,786 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:15,042 [simulate_environment.py | 302] INFO: 2023-09-24 00:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:15,042 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:15,042 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 00:50:00, pre time: 2023-09-24 00:40:00
+2023-09-24 17:26:15,042 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 00:50:00
+2023-09-24 17:26:15,043 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:15,294 [simulate_environment.py | 302] INFO: 2023-09-24 00:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:15,295 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:15,295 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:00:00, pre time: 2023-09-24 00:50:00
+2023-09-24 17:26:15,295 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:00:00
+2023-09-24 17:26:15,295 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:15,595 [simulate_environment.py | 302] INFO: 2023-09-24 01:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:15,595 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:15,595 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:10:00, pre time: 2023-09-24 01:00:00
+2023-09-24 17:26:15,595 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:10:00
+2023-09-24 17:26:15,596 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:15,836 [simulate_environment.py | 302] INFO: 2023-09-24 01:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:15,836 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:15,836 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:20:00, pre time: 2023-09-24 01:10:00
+2023-09-24 17:26:15,836 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:20:00
+2023-09-24 17:26:15,837 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:16,132 [simulate_environment.py | 302] INFO: 2023-09-24 01:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:16,133 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:16,133 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:30:00, pre time: 2023-09-24 01:20:00
+2023-09-24 17:26:16,133 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:30:00
+2023-09-24 17:26:16,134 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:16,386 [simulate_environment.py | 302] INFO: 2023-09-24 01:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:16,386 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:16,386 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:40:00, pre time: 2023-09-24 01:30:00
+2023-09-24 17:26:16,386 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:40:00
+2023-09-24 17:26:16,387 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:16,633 [simulate_environment.py | 302] INFO: 2023-09-24 01:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:16,633 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:16,633 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 01:50:00, pre time: 2023-09-24 01:40:00
+2023-09-24 17:26:16,633 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 01:50:00
+2023-09-24 17:26:16,634 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:16,878 [simulate_environment.py | 302] INFO: 2023-09-24 01:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:16,878 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:16,878 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:00:00, pre time: 2023-09-24 01:50:00
+2023-09-24 17:26:16,878 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:00:00
+2023-09-24 17:26:16,879 [simulate_environment.py | 214] INFO: Get 9 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:17,187 [simulate_environment.py | 302] INFO: 2023-09-24 02:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:17,187 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:17,187 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:10:00, pre time: 2023-09-24 02:00:00
+2023-09-24 17:26:17,187 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:10:00
+2023-09-24 17:26:17,188 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:17,436 [simulate_environment.py | 302] INFO: 2023-09-24 02:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:17,436 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:17,437 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:20:00, pre time: 2023-09-24 02:10:00
+2023-09-24 17:26:17,437 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:20:00
+2023-09-24 17:26:17,437 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:17,741 [simulate_environment.py | 302] INFO: 2023-09-24 02:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:17,741 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:17,741 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:30:00, pre time: 2023-09-24 02:20:00
+2023-09-24 17:26:17,741 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:30:00
+2023-09-24 17:26:17,742 [simulate_environment.py | 214] INFO: Get 10 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:18,050 [simulate_environment.py | 302] INFO: 2023-09-24 02:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:18,051 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:18,051 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:40:00, pre time: 2023-09-24 02:30:00
+2023-09-24 17:26:18,051 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:40:00
+2023-09-24 17:26:18,052 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:18,339 [simulate_environment.py | 302] INFO: 2023-09-24 02:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:18,339 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:18,339 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 02:50:00, pre time: 2023-09-24 02:40:00
+2023-09-24 17:26:18,339 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 02:50:00
+2023-09-24 17:26:18,340 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:18,642 [simulate_environment.py | 302] INFO: 2023-09-24 02:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:18,643 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:18,643 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:00:00, pre time: 2023-09-24 02:50:00
+2023-09-24 17:26:18,643 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:00:00
+2023-09-24 17:26:18,643 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:18,958 [simulate_environment.py | 302] INFO: 2023-09-24 03:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:18,959 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:18,959 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:10:00, pre time: 2023-09-24 03:00:00
+2023-09-24 17:26:18,959 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:10:00
+2023-09-24 17:26:18,960 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:19,261 [simulate_environment.py | 302] INFO: 2023-09-24 03:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:19,261 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:19,261 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:20:00, pre time: 2023-09-24 03:10:00
+2023-09-24 17:26:19,261 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:20:00
+2023-09-24 17:26:19,262 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:19,512 [simulate_environment.py | 302] INFO: 2023-09-24 03:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:19,512 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:19,512 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:30:00, pre time: 2023-09-24 03:20:00
+2023-09-24 17:26:19,512 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:30:00
+2023-09-24 17:26:19,513 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:19,809 [simulate_environment.py | 302] INFO: 2023-09-24 03:30:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:19,810 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:19,810 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:40:00, pre time: 2023-09-24 03:30:00
+2023-09-24 17:26:19,810 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:40:00
+2023-09-24 17:26:19,811 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:20,132 [simulate_environment.py | 302] INFO: 2023-09-24 03:40:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:20,133 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:20,133 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 03:50:00, pre time: 2023-09-24 03:40:00
+2023-09-24 17:26:20,133 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 03:50:00
+2023-09-24 17:26:20,133 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:20,425 [simulate_environment.py | 302] INFO: 2023-09-24 03:50:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:20,425 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:20,425 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 04:00:00, pre time: 2023-09-24 03:50:00
+2023-09-24 17:26:20,425 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 04:00:00
+2023-09-24 17:26:20,427 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:20,669 [simulate_environment.py | 302] INFO: 2023-09-24 04:00:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:20,669 [simulate_environment.py | 101] INFO: **************************************************
+2023-09-24 17:26:20,669 [simulate_environment.py | 105] INFO: cur time: 2023-09-24 04:10:00, pre time: 2023-09-24 04:00:00
+2023-09-24 17:26:20,669 [simulate_environment.py | 187] INFO: Start to update the input of 2023-09-24 04:10:00
+2023-09-24 17:26:20,670 [simulate_environment.py | 214] INFO: Get 11 unallocated order items, 0 ongoing order items, 0 completed order items
+2023-09-24 17:26:20,928 [simulate_environment.py | 302] INFO: 2023-09-24 04:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+2023-09-24 17:26:20,928 [simulate_environment.py | 346] ERROR: 2023-09-24 04:10:00, Item 0003480001-1's committed_completion_time is 2023-09-24 04:03:48 which has timed out, however it is still ignored in the dispatch result.
+2023-09-24 17:26:20,928 [simulate_environment.py | 172] ERROR: Simulator terminated
+2023-09-24 17:26:20,931 [main.py         | 83] INFO: Score of instance_1: 0

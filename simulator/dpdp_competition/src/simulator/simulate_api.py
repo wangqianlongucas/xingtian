@@ -93,3 +93,52 @@ def simulate(factory_info_file: str, route_info_file: str, instance: str):
         # 模拟器仿真过程
         simulate_env.run()
     return simulate_env.total_score
+
+
+def train(factory_info_file: str, route_info_file: str, instance: str, agent, replay_buffer, ms, bs):
+    stop_state = [0 for i in range(8)]
+    for epoch in range(500):
+        print()
+        print(f'epoch {epoch}', ' *' * 10)
+        simulate_env = __initialize(factory_info_file, route_info_file, instance)
+        if simulate_env is not None:
+            # 模拟器仿真过程
+            try:
+                simulate_env.run(agent)
+                for i in range(10):
+                    print('get positive return !', ' *' * 10)
+
+            except:
+                num_round = int(len(agent.sar_sequence) / 3)
+                action_list = [agent.sar_sequence[i * 3 + 1] for i in range(num_round)]
+                print(action_list + [1], 'fail')
+
+        # update buffer
+        num_round = int(len(agent.sar_sequence) / 3)
+        for round_i in range(num_round - 1):
+            state = agent.sar_sequence[round_i * 3]
+            action = agent.sar_sequence[round_i * 3 + 1]
+            reward = agent.sar_sequence[round_i * 3 + 2]
+            next_state = agent.sar_sequence[round_i * 3 + 3]
+            replay_buffer.add(state, action, reward, next_state, False)
+
+        state = agent.sar_sequence[-3]
+        action = agent.sar_sequence[-2]
+        reward = agent.sar_sequence[-1]
+        next_state = stop_state
+        replay_buffer.add(state, action, reward, next_state, True)
+        agent.return_list.append(agent.sar_sequence[-1])
+        # 当buffer数据的数量超过一定值后,才进行Q网络训练
+        if replay_buffer.size() > ms:
+            b_s, b_a, b_r, b_ns, b_d = replay_buffer.sample(bs)
+            transition_dict = {
+                'states': b_s,
+                'actions': b_a,
+                'next_states': b_ns,
+                'rewards': b_r,
+                'dones': b_d
+            }
+            agent.update(transition_dict)
+        agent.epsilon = agent.epsilon * 0.99
+
+    return agent.return_list[-1]
