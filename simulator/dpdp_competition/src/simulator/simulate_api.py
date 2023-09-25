@@ -105,8 +105,7 @@ def train(factory_info_file: str, route_info_file: str, instance: str, agent, re
             # 模拟器仿真过程
             try:
                 simulate_env.run(agent)
-                for i in range(10):
-                    print('get positive return !', ' *' * 10)
+                print('get positive return ! / may fail', agent.sar_sequence[-1], ' *' * 10)
 
             except:
                 num_round = int(len(agent.sar_sequence) / 3)

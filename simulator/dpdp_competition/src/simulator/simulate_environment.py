@@ -151,7 +151,7 @@ class SimulateEnvironment(object):
             if agent is not None:
                 agent.sar_sequence += [state, action]
                 # todo reward part
-                agent.sar_sequence += [len(agent.sar_sequence)]
+                agent.sar_sequence += [0]
 
             # 派单环节, 设计与算法交互
             used_seconds, dispatch_result = self.dispatch(updated_input_info)

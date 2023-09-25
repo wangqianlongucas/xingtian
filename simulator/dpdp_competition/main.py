@@ -51,7 +51,7 @@ if __name__ == "__main__":
         logger.info(f"Start to run {instance}")
 
         try:
-            is_dqn = 0
+            is_dqn = 1
             if not is_dqn:
                 score = simulate(Configs.factory_info_file, Configs.route_info_file, instance)
             else:
@@ -59,7 +59,7 @@ if __name__ == "__main__":
                 num_episodes = 500
                 hidden_dim = 128
                 gamma = 0.98
-                epsilon = 0.8
+                epsilon = 1.05
                 target_update = 4
                 buffer_size = 10000
                 minimal_size = 128
